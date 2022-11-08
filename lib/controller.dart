@@ -1,6 +1,9 @@
 import 'package:angel_espinosa_corrales_todo/model.dart';
 
-class toDoController{
-  static List<String> get todoList => modelo().todoList;
+class ToDoController {
+  List<String> get todoList => Modelo().todoList;
 
+  void addList(String title) {
+    Modelo().todoList.add(title);
+  }
 }

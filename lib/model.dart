@@ -1,11 +1,11 @@
-class modelo{
-
-  factory modelo(){
+class Modelo {
+  factory Modelo() {
     return _instance;
   }
-  modelo._constructor(){}
-  List<String> _todoList= <String>[];
-  static final modelo _instance= modelo._constructor();
+
+  Modelo._constructor();
+  final List<String> _todoList = <String>[];
+  static final Modelo _instance = Modelo._constructor();
 
   List<String> get todoList => _todoList;
 }
